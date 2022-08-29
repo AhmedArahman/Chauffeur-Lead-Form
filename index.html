@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <?xml version="1.0" encoding="utf-8"?>
+
+  <meta charset="utf-8">
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+    <!--  If necessary, please modify the charset parameter to specify the        -->
+    <!--  character set of your HTML page.                                        -->
+    <!--  ----------------------------------------------------------------------  -->
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <title>Chauffeur - Lead Form</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/63cfdc02a3.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <section id="signup-page">
+
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+
+        <!-- Icon -->
+        <div class="fadeIn first signup-icon">
+          <img src="car.png" alt="">
+        </div>
+
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTE: Please add the following <FORM> element to your page.             -->
+        <!--  ----------------------------------------------------------------------  -->
+
+        <!-- Sign up Form -->
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail"                                  -->
+            <!--  value="aabdelrahman@cloudastick.com">                                   -->
+            <!--  ----------------------------------------------------------------------  -->
+            <input type=hidden name="oid" value="00D5i00000AGdtP">
+            <input type=hidden name="retURL" value="https://www.cars-guru.com/">
+
+            <div class="signup-first-name">
+                <input type="text" name="first_name" id="first_name" value="" placeholder="First Name" class="fadeIn second" required>
+            </div>
+            <div class="signup-last-name">
+                <input type="text" name="last_name" id="last_name" value="" placeholder="Last Name" class="fadeIn third" required>
+            </div>
+            <div class="signup-email">
+                <input type="text" id="email" class="fadeIn fourth" name="email" placeholder="Email" required>
+            </div>
+            <div class="signup-password">
+                <input type="text" id="mobile" class="fadeIn fifth" name="mobile" placeholder="Mobile Number" required>
+            </div>
+            <div class="select-wrapper signup-email fadeIn sixth">
+                <select  id="lead_source" name="lead_source" class="select">
+                    <option value="">--None--</option>
+                    <option value="Web">Web</option>
+                    <option value="Word of mouth">Word of mouth</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="signup-company">
+                <input type="text" name="00N5i00000GJrvT" id="00N5i00000GJrvT" value="" placeholder="Start Location" class="fadeIn seventh" required>
+            </div>
+            <div class="signup-phone">
+                <input type="text" name="00N5i00000GJrvn" id="00N5i00000GJrvn" value="" placeholder="Destination" class="fadeIn eighth" required>
+            </div>
+            <div class="signup-phone">
+                <input type="text" name="00N5i00000GJrvK" id="00N5i00000GJrvK" value="" placeholder="Number of Passengers" class="fadeIn ninth" required>
+            </div>
+            <div class="signup-phone">
+                <input type="text" name="00N5i00000GJrxy" id="00N5i00000GJrxy" value="" placeholder="Trip Date" class="fadeIn tenth" required>
+            </div>
+
+            <input type="submit" name="submit" class="fadeIn eleventh" value="Register">
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+    
+    <!-- <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    
+    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    
+    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    <label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br> -->
+    
+    <!-- Start Location:<input  id="00N5i00000GJrvT" maxlength="255" name="00N5i00000GJrvT" size="20" type="text" /><br>
+    
+    Destination:<input  id="00N5i00000GJrvn" maxlength="255" name="00N5i00000GJrvn" size="20" type="text" /><br>
+    
+    Number of Passengers:<input  id="00N5i00000GJrvK" name="00N5i00000GJrvK" size="20" type="text" /><br>
+    
+    Trip Date:<span class="dateInput"><input  id="00N5i00000GJrxy" name="00N5i00000GJrxy" size="20" type="text" /></span><br> -->
